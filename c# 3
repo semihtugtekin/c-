@@ -1,1 +1,26 @@
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace PT03_20231011
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Bir kişinin ismini sorup ismi ekrana yazan programı yazınız.
+
+            string isim;
+            Console.WriteLine("İsminizi yazın:");
+
+            isim = Console.ReadLine();
+            Console.WriteLine("Merhaba "  + isim );
+
+           
+
+            Console.ReadKey();
+        }
+    }
+}
