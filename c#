@@ -15,7 +15,7 @@ namespace PT01_20231009_IlkProje
             // Console.WriteLine("Kadir");
 
             string ad; // ad değişkenin tipi string oldu
-            ad = "kadir"; // ad değişkeninde değer atadım
+            ad = "sem"; // ad değişkeninde değer atadım
             
             Console.WriteLine(ad); //ad değişkenini ekrana yazdırdım
 
