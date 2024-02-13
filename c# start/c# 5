@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PT05_2023_10_16
+{
+   internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Klavyeden girilecek 2 sayının toplamını ekrana yazan program
+
+            int sonuc, sayi1, sayi2;
+
+            Console.Write("1. sayıyı yazın: ");
+            sayi1 = Convert.ToInt32( Console.ReadLine() );
+            // sayi1 = Int32.Parse(Console.ReadLine());
+
+            Console.Write("2. sayıyı yazın: ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            sonuc = sayi1 + sayi2;
+            //Console.WriteLine($"Girdiğiniz sayıların toplamı: {sonuc}");
+
+            // 14 ve 7 sayılarının toplamı: 21
+            Console.Write($"{sayi1} ve {sayi2} sayılarını toplamı: {sonuc}");
+
+            //Console.Write(sayi1 + " ve " + sayi2 + " sayalarının toplamı: " + sonuc);
+
+            Console.ReadKey();
+            
+        }
+    }
+}
