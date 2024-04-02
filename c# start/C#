@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PT07_2023_10_18
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            a = 10;
+            b = 5;
+            Console.WriteLine(a + b);
+
+            string d, e;
+            d = "10";
+            e = "5";
+            Console.WriteLine(d + e);
+            Console.WriteLine(Convert.ToInt16(d) +  Convert.ToInt16(e));
+
+            //string isim;
+            //isim = Console.ReadLine();
+            //string isim = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+
+            int x = 10, y = 5;
+
+            Console.WriteLine("x > y: " + (x > y) );  // True
+            Console.WriteLine("x < y: " + (x < y) );  // False
+            Console.WriteLine("x <= y: " + (x <= y) );  // False
+            Console.WriteLine("x >= y: " + (x >= y) );  // True
+            Console.WriteLine("x == y: " + (x == y) );  // False
+            Console.WriteLine("x != y: " + (x != y) );  // True
+
+            bool durum = x > y;
+            Console.WriteLine(durum);
+
+
+            Console.ReadKey();
+        }
+    }
+}
