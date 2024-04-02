@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PT10_2023_10_23_IF1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ders notu =>  50 ve üzerinden ise dersten geçsin
+
+            int not = 30;
+
+            if ( not >= 50 ) 
+            {
+                Console.WriteLine("GEÇTİN");
+            } else
+            {
+                Console.WriteLine("KALDIN");
+            }
+
+            Console.WriteLine("PROGRAM BİTTİ");
+            Console.ReadKey();
+        }
+    }
+}
