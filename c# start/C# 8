@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace PT08_2023_10_18
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Kişiye doğduğu yılı sorup kaç yıl sonra 50 yaşında olacağını
+            // hesaplayan programı yazınız
+
+            int dogumYili,   yas, kalan;
+            Console.Write("Kaç yılında doğdun? ");
+            dogumYili = Convert.ToInt32(Console.ReadLine()); //1981
+
+            //yas = 2023 - dogumYili; // 42
+            //yas = DateTime.Now.Year - dogumYili; 
+            DateTime zaman = DateTime.Now;
+            int yil = zaman.Year;
+            yas = yil - dogumYili; // 42
+
+            kalan = 50 - yas; // 8
+            Console.WriteLine($"{kalan} yıl sonra 50 yaşında olacaksın");
+            Console.ReadKey();
+
+            //string ad1, ad2, ad1soya1;
+            //string 1ad, 2ad, 3ad;
+
+            string adi_soyadi;
+            //string adi-soyadi;
+            //string adi?;
+
+            //string adi soyadi;
+            //string for;
+
+            string ad;
+            string AD;
+            
+            ad = "Kadir";
+            Console.WriteLine(ad);
+
+        }
+    }
+}
