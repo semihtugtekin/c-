@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PT09_2023_10_18
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime zaman;
+
+            // Bilgisayarın o anki tarih ve saatini verir
+            zaman = DateTime.Now;
+            Console.WriteLine(zaman);
+
+            Console.WriteLine($"Yıl: {zaman.Year}");
+            Console.WriteLine($"Ay: {zaman.Month}");
+            Console.WriteLine($"Gün: {zaman.Day}");
+            Console.WriteLine($"Saat: {zaman.Hour}");
+            Console.WriteLine($"Dakika: {zaman.Minute}");
+            Console.WriteLine($"Saniye: {zaman.Second}");
+            Console.WriteLine($"Milisaniye: {zaman.Millisecond}");
+            Console.WriteLine($"Ticks (an): {zaman.Ticks}");
+
+            // 15 Ocak 2024 tarihi oluşturulmuş olur
+            DateTime yeniTarih = new DateTime(2024, 1, 15);
+
+            DateTime sonrakiAy = zaman.AddMonths(1);
+            Console.WriteLine(sonrakiAy);
+
+            Console.WriteLine($"Yarın: {zaman.AddDays(1)}");
+            Console.WriteLine($"Sonraki gün: {zaman.AddDays(2)}");
+            Console.WriteLine($"Dün: {zaman.AddDays(-1)}");
+
+
+            DateTime dogumGunu = new DateTime(2003,9,30);
+            TimeSpan gecenZaman = zaman - dogumGunu;
+            Console.WriteLine(gecenZaman.TotalDays);
+
+            int besSayininBolumundenKalanDeger = 4;
+            int x = 4;
+            besSayininBolumundenKalanDeger = 1;
+
+            Console.ReadKey();
+        }
+    }
+}
