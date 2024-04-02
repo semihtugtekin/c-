@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace PT06_2023_10_16
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int sayi = 5;
+            string a = "10";
+
+            //sayi = a;  
+            // string bir değişken doğrudan sayısal değişkene aktarılmaz
+
+            sayi = Convert.ToInt32(a);
+
+            //-----------------------------
+
+
+            string c = "20";
+            int d = 8;
+
+            //c = d;
+            // sayısal bir değişken doğrudan string değişkene aktarılmaz
+            c = Convert.ToString(d);
+
+            c = d.ToString();
+
+            // --------------------------------
+
+            // OPERATÖRLER
+            /*
+                +  -> Toplama işlemi için kullanılır
+                -  -> Çıkarma işlemi için kullanılır
+                *  -> Çarpma  işlemi için kullanılır
+                /  -> Bölme işlemi için kullanılır
+                %  -> Mod alma işlemi için kullanılır
+                        Mod: Bölme işleminden kalan sayı
+             
+            */
+
+            int e = 5;
+            Console.WriteLine(e);
+
+            e = e + 1;
+            Console.WriteLine(e);
+
+            e++;  // e = e + 1;
+            Console.WriteLine(e);
+
+            ++e; // e = e + 1;
+            Console.WriteLine(e);
+
+
+            int f = 10;
+            int g;
+
+            g = f++;  // f değerini g ye atar sonra f yi 1 artırır
+            Console.WriteLine($"g={g}");
+
+            int h = 10;
+            int i;
+
+            i = ++h;  // h değerini 1 artırır sonra yeni değeri i ye atar
+            Console.WriteLine($"i={i}");
+
+            //  ++ operatörünün kullanımının aynısı -- operatörü için de geçerlidir
+
+
+            // ---------------------------------------
+
+            int j = 20;
+
+            j = j + 1;  // j++   j += 1
+            j = j + 2;  j+=2;
+            j = j + 15; j+=15;
+
+            // +=   -=  *=
+            
+            Console.ReadKey();
+
+
+        }
+    }
+}
