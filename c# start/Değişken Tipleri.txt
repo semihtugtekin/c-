@@ -1,0 +1,53 @@
+1. Sayısal Veri Tipleri
+2. Alfasayısal (Metin) Veri Tipleri
+3. Diğer Tipler
+
+
+2. Alfasayısal (Metin) Veri Tipleri
+------------------------------------
+
+Değişlen Tipi	Bellekte 			Alabileceği
+				Kapladığı Alan		Değer Aralığı
+-------------	--------------		-------------------------
+string			Sınırsız (x 1byte)	Metinsel bir ifade tutar. Unicode karakterlerden oluşur
+Char			2 Byte				Tek karakterlik ifade tutar
+
+
+1. Sayısal Veri Tipleri  ( Tam Sayılar - Ondalıklı Sayılar)
+------------------------------------
+
+Değişken	Bellekte 			Alabileceği 
+Tipi		Kapladığı Alan		Değer Aralığı	
+--------	--------------		-------------------------
+byte		1 Byte				0 ile 255 arasıda tam sayı değer alır
+sbyte 		1 Byte				-128 ile 127 arasında tam sayı değer alır
+short		2 Byte				-32768 ile 32767 arasında tam sayı değer alır
+ushort 		2 Byte				0 ile 65535 arasında tam sayı değer alır
+int			4 Byte				-2.147.483.648 ile 2.147.483.647 arasında tam sayı
+uint 		4 Byte				0 ile 4.294.967.295 arası tam sayı
+long		8 Byte				-9.223.372.036.854.775.808 ile 9.223.372.036.854.775.807
+ulong 		8 Byte				0 ile 18.446.744.073.709.551.615 arası tam
+
+float : Uzunluğu 4 byte’tır, 1.5 x 10-45 ile 3.4 x 1038 arasında değer alır.
+
+double : Uzunluğu 8 byte’tır, 5.0 x 10-324 ile 1.7 x 10308 arasında değer alır.
+
+decimal : Uzunluğu 12 byte’tır, ±1.0 x 10-28 ile ±7.9 x 1028 arasında değer alır.
+
+
+3. Diğer Tipler
+---------------------
+Boolean (Bool) 1bit  True (1) - False (0)
+DateTime	8 Byte 	Tarih ve zaman bilgisi tutar
+Object 		Sınırsız Her şeyi tutar. Tüm verileri kapsar
+
+
+Değişken Tanımlama Kuralları
+---------------------------------
+1 - Türkçe karakter kullanılmaz
+2 - Değişkenler rakam ile başlamz. fakat değişken isimleri içinde rakam kullanılabilir
+3 - "_" (alt tire) karakteri dışında bir karakter yada sembol kullanılmaz
+4 - Boşluk karakteri kullanılmaz
+5 - Programlama diline ait komutlar, ifadeler değişken ismi olarak kullanılamaz
+6 - Büyük küçük harf duyarlılığı vardır.
+7 - Aynı isimli değişkenler aynı blok (scope) içerisinde kullanılamaz.
